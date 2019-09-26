@@ -1,0 +1,14 @@
+uuid: 2b9bad51-1272-4f92-8108-1908018bcb54
+name: DEV
+mail: vijay.sutar@clariontechnologies.co.in
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node
+admin_compact_mode: false
+weight_select_max: 100
+langcode: en
+default_langcode: en
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE
