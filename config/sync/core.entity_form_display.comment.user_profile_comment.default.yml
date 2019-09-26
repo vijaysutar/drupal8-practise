@@ -1,0 +1,36 @@
+uuid: fcc11d6a-e7fd-4721-a1c1-2087608ed5c9
+langcode: en
+status: true
+dependencies:
+  config:
+    - comment.type.user_profile_comment
+    - field.field.comment.user_profile_comment.comment_body
+  module:
+    - text
+id: comment.user_profile_comment.default
+targetEntityType: comment
+bundle: user_profile_comment
+mode: default
+content:
+  author:
+    weight: -2
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  comment_body:
+    type: text_textarea
+    weight: 11
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    region: content
+  subject:
+    type: string_textfield
+    weight: 10
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden: {  }

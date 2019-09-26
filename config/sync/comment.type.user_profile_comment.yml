@@ -1,0 +1,8 @@
+uuid: 93ec926e-23f0-4cfa-a633-a4436249ba6f
+langcode: en
+status: true
+dependencies: {  }
+id: user_profile_comment
+label: 'User Profile Comment'
+target_entity_type_id: user
+description: 'Allow Commenting on User Profile'

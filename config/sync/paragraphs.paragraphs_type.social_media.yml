@@ -1,0 +1,9 @@
+uuid: 282490d5-1755-4c6c-8b85-12bad98bbe69
+langcode: en
+status: true
+dependencies: {  }
+id: social_media
+label: 'Social Media'
+icon_uuid: null
+description: 'Social Media Paragraph'
+behavior_plugins: {  }

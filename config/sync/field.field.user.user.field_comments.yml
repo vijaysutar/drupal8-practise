@@ -1,25 +1,23 @@
-uuid: 1c6a592e-809b-49c9-bf08-4911a1dc7c72
+uuid: 362e2b13-f68d-4419-bd45-d3423787007f
 langcode: en
 status: true
 dependencies:
   config:
-    - field.storage.node.comment
-    - node.type.article
+    - field.storage.user.field_comments
   module:
     - comment
-_core:
-  default_config_hash: r-hrxwbKKXBKQnBefGjXNSdU00u2fPvMWEykGRHqd10
-id: node.article.comment
-field_name: comment
-entity_type: node
-bundle: article
+    - user
+id: user.user.field_comments
+field_name: field_comments
+entity_type: user
+bundle: user
 label: Comments
 description: ''
 required: false
-translatable: true
+translatable: false
 default_value:
   -
-    status: 1
+    status: 2
     cid: 0
     last_comment_timestamp: 0
     last_comment_name: null

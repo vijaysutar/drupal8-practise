@@ -3,9 +3,11 @@ langcode: en
 status: true
 dependencies:
   config:
+    - field.field.user.user.field_comments
     - field.field.user.user.user_picture
     - image.style.thumbnail
   module:
+    - comment
     - image
     - user
 _core:
@@ -15,6 +17,15 @@ targetEntityType: user
 bundle: user
 mode: default
 content:
+  field_comments:
+    weight: 6
+    label: above
+    settings:
+      view_mode: default
+      pager_id: 0
+    third_party_settings: {  }
+    type: comment_default
+    region: content
   member_for:
     weight: 5
     region: content
