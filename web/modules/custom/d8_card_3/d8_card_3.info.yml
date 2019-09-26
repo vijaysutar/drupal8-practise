@@ -1,0 +1,5 @@
+name: D8 Card 3
+description: Drupal 8 Activity Card 3
+core: 8.x
+type: module
+configure: d8_card_3.config

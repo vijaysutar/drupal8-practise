@@ -1,0 +1,8 @@
+d8_card_3.config:
+  path: '/d8_card_3/config'
+  defaults:
+    _form: '\Drupal\d8_card_3\Form\d8Card3Config'
+    _title: 'Drupal 8 Activity Card 3 Config Form'
+  requirements:
+    _permission: 'administer site configuration'
+
