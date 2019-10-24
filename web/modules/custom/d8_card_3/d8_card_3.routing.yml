@@ -5,4 +5,3 @@ d8_card_3.config:
     _title: 'Drupal 8 Activity Card 3 Config Form'
   requirements:
     _permission: 'administer site configuration'
-

@@ -2,11 +2,11 @@
 
 namespace Drupal\d8_card_3\Form;
 
-use Drupal\Core\Form\ConfigFormBase;
 use Drupal\Core\Form\FormStateInterface;
+use Drupal\Core\Form\ConfigFormBase;
 
 /**
- * D8 Activity Card Config Class form
+ * D8 Activity Card Config Class form.
  */
 class d8Card3Config extends ConfigFormBase {
 
@@ -24,8 +24,10 @@ class d8Card3Config extends ConfigFormBase {
     return 'd8card3_configuration_form';
   }
 
-  public function buildForm(array $form, \Drupal\Core\Form\FormStateInterface $form_state)
-  {
+  /**
+   *
+   */
+  public function buildForm(array $form, FormStateInterface $form_state) {
     $config = $this->config('d8card3.configuration');
 
     $form['text_option'] = [
@@ -39,37 +41,38 @@ class d8Card3Config extends ConfigFormBase {
       '#title' => $this->t('Select Element'),
       '#options' => [
         '1' => $this->t('One'),
-        '2' => $this->t('Two')
+        '2' => $this->t('Two'),
       ],
       '#default_value' => $config->get('select_option'),
     ];
 
-    $form['radio_option'] = array(
+    $form['radio_option'] = [
       '#type' => 'radios',
       '#title' => $this
         ->t('Poll status'),
       '#default_value' => $config->get('radio_option'),
-      '#options' => array(
+      '#options' => [
         0 => $this
           ->t('Closed'),
         1 => $this
           ->t('Active'),
-      ),
-    );
+      ],
+    ];
 
     return parent::buildForm($form, $form_state);
   }
 
-  public function submitForm(array &$form, \Drupal\Core\Form\FormStateInterface $form_state)
-  {
+  /**
+   *
+   */
+  public function submitForm(array &$form, FormStateInterface $form_state) {
     $this->config('d8card3.configuration')
-    ->set('text_option', $form_state->getValue('text_option'))
-    ->set('select_option',$form_state->getValue('select_option'))
-    ->set('radio_option', $form_state->getValue('radio_option'))
-    ->save();
+      ->set('text_option', $form_state->getValue('text_option'))
+      ->set('select_option', $form_state->getValue('select_option'))
+      ->set('radio_option', $form_state->getValue('radio_option'))
+      ->save();
 
     parent::buildForm($form, $form_state);
   }
 
 }
-
