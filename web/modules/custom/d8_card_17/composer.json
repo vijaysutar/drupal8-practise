@@ -1,0 +1,13 @@
+{
+    "name": "d8_card_17",
+    "type": "drupal-module",
+    "description": "Drupal 8 card day 17",
+    "keywords": [
+    ],
+    "homepage": "https://www.drupal.org/project/d8_card_17",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/d8_card_17",
+        "source": "http://cgit.drupalcode.org/d8_card_17"
+    }
+}

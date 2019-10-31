@@ -1,0 +1,39 @@
+<?php
+
+/**
+ * @file
+ * Contains d8_card_15.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function d8_card_15_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the d8_card_15 module.
+    case 'help.page.d8_card_15':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Custom Field Formater') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function d8_card_15_theme() {
+  return [
+    'd8_card_15' => [
+      'render element' => 'children',
+    ],
+    'rating_formatter' => [
+      'variables' => ['rating' => NULL],
+      'template' => 'rating-formatter',
+    ]
+  ];
+}

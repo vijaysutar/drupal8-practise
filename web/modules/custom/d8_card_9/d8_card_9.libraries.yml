@@ -1,0 +1,19 @@
+block_library:
+  js:
+    js/day9.js: {}
+
+table_library:
+  css:
+    theme:
+      css/day9.css: {}
+
+cuddly-slider:
+  version: 1.x
+  css:
+    theme:
+      css/cuddly-slider.css: {}
+
+  js:
+    js/cuddly-slider.js: {}
+  dependencies:
+    - core/jquery

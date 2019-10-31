@@ -1,0 +1,13 @@
+{
+    "name": "d8_card_11",
+    "type": "drupal-module",
+    "description": "D8 ACtivity Card Day 11",
+    "keywords": [
+    ],
+    "homepage": "https://www.drupal.org/project/d8_card_11",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/d8_card_11",
+        "source": "http://cgit.drupalcode.org/d8_card_11",
+    },
+}

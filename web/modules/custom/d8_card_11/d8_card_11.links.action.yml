@@ -1,0 +1,10 @@
+entity.contact_entity.add_form:
+  route_name: entity.contact_entity.add_page
+  title: 'Add Contact entity'
+  appears_on:
+    - entity.contact_entity.collection
+entity.contact_entity_type.add_form:
+  route_name: entity.contact_entity_type.add_form
+  title: 'Add Contact entity type'
+  appears_on:
+    - entity.contact_entity_type.collection

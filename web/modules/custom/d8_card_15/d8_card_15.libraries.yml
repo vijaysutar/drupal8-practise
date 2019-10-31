@@ -1,0 +1,6 @@
+star_rating:
+  version: 1.0
+  header: true
+  css:
+    theme:
+      css/rating-style.css: {}

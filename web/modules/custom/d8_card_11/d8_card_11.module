@@ -1,0 +1,65 @@
+<?php
+
+/**
+ * @file
+ * Contains d8_card_11.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function d8_card_11_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the d8_card_11 module.
+    case 'help.page.d8_card_11':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('D8 ACtivity Card Day 11') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function d8_card_11_theme() {
+  $theme = [];
+  $theme['contact_entity'] = [
+    'render element' => 'elements',
+    'file' => 'contact_entity.page.inc',
+    'template' => 'contact_entity',
+  ];
+  $theme['contact_entity_content_add_list'] = [
+    'render element' => 'content',
+    'variables' => ['content' => NULL],
+    'file' => 'contact_entity.page.inc',
+  ];
+
+//  return [
+//    'd8_card_11' => [
+//      'render element' => 'children',
+//    ],
+//  ];
+
+  return $theme;
+}
+
+/**
+ * Implements hook_theme_suggestions_HOOK().
+ */
+function d8_card_11_theme_suggestions_contact_entity(array $variables) {
+  $suggestions = [];
+  $entity = $variables['elements']['#contact_entity'];
+  $sanitized_view_mode = strtr($variables['elements']['#view_mode'], '.', '_');
+
+  $suggestions[] = 'contact_entity__' . $sanitized_view_mode;
+  $suggestions[] = 'contact_entity__' . $entity->bundle();
+  $suggestions[] = 'contact_entity__' . $entity->bundle() . '__' . $sanitized_view_mode;
+  $suggestions[] = 'contact_entity__' . $entity->id();
+  $suggestions[] = 'contact_entity__' . $entity->id() . '__' . $sanitized_view_mode;
+  return $suggestions;
+}

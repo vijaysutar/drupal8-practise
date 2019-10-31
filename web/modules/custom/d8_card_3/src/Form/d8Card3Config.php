@@ -2,14 +2,13 @@
 
 namespace Drupal\d8_card_3\Form;
 
-use Drupal\Core\Block\Annotation\Block;
 use Drupal\Core\Form\FormStateInterface;
 use Drupal\Core\Form\ConfigFormBase;
 
 /**
  * D8 Activity Card Config Class form.
  */
-class d8Card3Config extends Block {
+class d8Card3Config extends ConfigFormBase {
 
   /**
    * {@inheritdoc}

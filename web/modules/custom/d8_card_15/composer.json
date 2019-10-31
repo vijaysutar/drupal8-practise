@@ -1,0 +1,13 @@
+{
+    "name": "d8_card_15",
+    "type": "drupal-module",
+    "description": "Custom Field Formater",
+    "keywords": [
+    ],
+    "homepage": "https://www.drupal.org/project/d8_card_15",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/d8_card_15",
+        "source": "http://cgit.drupalcode.org/d8_card_15",
+    },
+}

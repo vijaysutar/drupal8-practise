@@ -1,0 +1,33 @@
+add contact entity entities:
+  title: 'Create new Contact entity entities'
+
+administer contact entity entities:
+  title: 'Administer Contact entity entities'
+  description: 'Allow to access the administration form to configure Contact entity entities.'
+  restrict access: true
+
+delete contact entity entities:
+  title: 'Delete Contact entity entities'
+
+edit contact entity entities:
+  title: 'Edit Contact entity entities'
+
+view published contact entity entities:
+  title: 'View published Contact entity entities'
+
+view unpublished contact entity entities:
+  title: 'View unpublished Contact entity entities'
+
+view all contact entity revisions:
+  title: 'View all Contact entity revisions'
+
+revert all contact entity revisions:
+  title: 'Revert all Contact entity revisions'
+  description: 'Role requires permission <em>view Contact entity revisions</em> and <em>edit rights</em> for contact entity entities in question or <em>administer contact entity entities</em>.'
+
+delete all contact entity revisions:
+  title: 'Delete all revisions'
+  description: 'Role requires permission to <em>view Contact entity revisions</em> and <em>delete rights</em> for contact entity entities in question or <em>administer contact entity entities</em>.'
+
+permission_callbacks:
+  - \Drupal\d8_card_11\ContactEntityPermissions::generatePermissions

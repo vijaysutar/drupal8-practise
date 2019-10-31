@@ -1,0 +1,4 @@
+name: Shorten URL For Files
+description: Shorten URL mapping for Files
+core: 8.x
+type: module

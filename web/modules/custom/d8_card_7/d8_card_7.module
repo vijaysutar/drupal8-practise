@@ -1,0 +1,32 @@
+<?php
+/**
+ * @file
+ * Drupal activity card day 7
+ */
+
+/**
+ * Ref:
+ * https://www.sitepoint.com/drupal-8-queue-api-powerful-manual-and-cron-queueing/
+ * https://www.carnaghan.com/cron-queuing-in-drupal-8/
+ */
+
+/**
+ * Implements hook_entity_insert().
+ */
+function d8_card_7_entity_insert(Drupal\Core\Entity\EntityInterface $entity) {
+
+  // If entity is other than user then skip the process.
+  if($entity->getEntityTypeId() !== 'user') {
+    return;
+  }
+
+  /** @var QueueFactory $queue_factory */
+  $queue_factory = \Drupal::service('queue');
+  /** @var QueueInterface $queue */
+  $queue = $queue_factory->get('cron_user_mailer');
+  // Create PHP standard Class object
+  $item = new stdClass();
+  //
+  $item->uid = $entity->id();
+  $queue->createItem($item);
+}

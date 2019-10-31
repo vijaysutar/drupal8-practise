@@ -1,0 +1,13 @@
+<?php
+
+/**
+ * Implements hook_element_info_alter().
+ */
+function d8_card_9_element_info_alter(array &$info) {
+ if (isset($info['table'])) {
+//   print_r($info);die;
+//   $info['table']['#attached']['library'][] = 'd8_card_9/table_library';
+//   die();
+ }
+
+}

@@ -1,0 +1,7 @@
+custom.short_url:
+  path: '/{}.jpg'
+  defaults:
+    _controller: '\Drupal\custom_shorturl\Controller\ShortUrlController::loadImage'
+  requirements:
+    _access: 'TRUE'
+    filename: '[a-zA-Z]+'

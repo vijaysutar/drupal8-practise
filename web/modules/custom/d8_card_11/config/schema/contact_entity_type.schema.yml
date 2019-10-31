@@ -1,0 +1,12 @@
+d8_card_11.contact_entity_type.*:
+  type: config_entity
+  label: 'Contact entity type config'
+  mapping:
+    id:
+      type: string
+      label: 'ID'
+    label:
+      type: label
+      label: 'Label'
+    uuid:
+      type: string

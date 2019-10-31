@@ -1,0 +1,37 @@
+<?php
+/**
+ * @file
+ * D8 Activity Card Cron job
+ */
+
+/**
+ * Implements hook_cron().
+ */
+function d8_card_5_cron() {
+  $blocks = \Drupal::entityTypeManager()
+    ->getStorage('block_content')
+    ->loadByProperties(['type' => 'stock_exchange_rate_card']);
+
+  foreach ($blocks as $block) {
+    $value = $block->field_symbol->value;
+    $url = 'http://dev.markitondemand.com/MODApis/Api/v2/Quote/json?symbol='.$value.'&callback=myFunction';
+    $response = \Drupal::httpClient()->get(
+      $url,
+      ['headers' => [
+        'Accept' => 'text/plain'
+        ]
+      ]
+    );
+    $data = (string) $response->getBody();
+
+    $decoded_data = \Drupal\Component\Serialization\Json::decode($data);
+
+    $last_price = $decoded_data['LastPrice'];
+    $change = $decoded_data['Change'];
+
+    $block->set('field_change', $change);
+    $block->set('field_last_price', $last_price);
+    $block->save();
+  }
+
+}

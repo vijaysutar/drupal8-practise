@@ -1,0 +1,13 @@
+id: games
+label: 'Games'
+migration_group: game
+source:
+  plugin: games
+  key: migrate
+process:
+  title: title
+  field_datetime: datetime
+  field_place: place
+destination:
+  plugin: 'entity:node'
+  default_bundle: game
