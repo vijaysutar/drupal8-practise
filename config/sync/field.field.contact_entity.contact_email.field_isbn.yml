@@ -1,0 +1,23 @@
+uuid: 0a4b0d1d-0e8b-4ebb-b52a-477a07c73270
+langcode: en
+status: true
+dependencies:
+  config:
+    - d8_card_11.contact_entity_type.contact_email
+    - field.storage.contact_entity.field_isbn
+id: contact_entity.contact_email.field_isbn
+field_name: field_isbn
+entity_type: contact_entity
+bundle: contact_email
+label: ISBN
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: decimal

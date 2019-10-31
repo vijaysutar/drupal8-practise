@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   module:
+    - d8_card_8
     - editor
 _core:
   default_config_hash: P8ddpAIKtawJDi5SzOwCzVnnNYqONewSTJ6Xn0dW_aQ
@@ -43,3 +44,10 @@ filters:
     status: true
     weight: 11
     settings: {  }
+  filter_capitalize:
+    id: filter_capitalize
+    provider: d8_card_8
+    status: true
+    weight: 0
+    settings:
+      capitalize_words: 'vijay,sutar'

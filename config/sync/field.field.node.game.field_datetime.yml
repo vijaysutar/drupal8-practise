@@ -1,0 +1,21 @@
+uuid: 6589352c-b207-47e3-bca5-910df5abc895
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_datetime
+    - node.type.game
+  module:
+    - datetime
+id: node.game.field_datetime
+field_name: field_datetime
+entity_type: node
+bundle: game
+label: 'Date And Time'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

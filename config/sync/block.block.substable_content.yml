@@ -1,0 +1,22 @@
+uuid: 32dfdc60-4125-4c28-aa66-d938df9fd69d
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - substable
+_core:
+  default_config_hash: 9EoWV2Lot6FVSr50t4hoKgiz1LIXYWNG-IIPYsWxBqo
+id: substable_content
+theme: substable
+region: content
+weight: 0
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

@@ -1,0 +1,25 @@
+uuid: 69c1193a-4259-4657-b09d-5bc0a12341ca
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:stock_exchange_rate_card:03146aa8-0bb7-4650-b880-561c729cd0f2'
+  module:
+    - block_content
+  theme:
+    - substable
+id: substable_appleinc
+theme: substable
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'block_content:03146aa8-0bb7-4650-b880-561c729cd0f2'
+settings:
+  id: 'block_content:03146aa8-0bb7-4650-b880-561c729cd0f2'
+  label: 'Apple Inc'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

@@ -1,0 +1,49 @@
+uuid: c7349379-74bf-43ed-bcc9-05d29713da74
+langcode: en
+status: true
+dependencies:
+  config:
+    - d8_card_11.contact_entity_type.contact_email
+    - field.field.contact_entity.contact_email.field_isbn
+  module:
+    - user
+id: contact_entity.contact_email.default
+targetEntityType: contact_entity
+bundle: contact_email
+mode: default
+content:
+  email:
+    label: above
+    type: string
+    weight: -4
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_isbn:
+    weight: 1
+    label: above
+    settings:
+      thousand_separator: ''
+      decimal_separator: .
+      scale: 2
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_decimal
+    region: content
+  name:
+    label: above
+    type: string
+    weight: -4
+    region: content
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  user_id:
+    label: hidden
+    type: author
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

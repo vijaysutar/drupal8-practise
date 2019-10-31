@@ -1,0 +1,55 @@
+uuid: 91b6876b-1e52-4f27-b8cb-af1bb5fb732f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.movie.body
+    - field.field.node.movie.field_actors
+    - field.field.node.movie.field_genre
+    - field.field.node.movie.field_rating
+    - node.type.movie
+  module:
+    - d8_card_15
+    - text
+    - user
+id: node.movie.default
+targetEntityType: node
+bundle: movie
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_actors:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_genre:
+    weight: 103
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_rating:
+    weight: 104
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: rating_formattter
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

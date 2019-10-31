@@ -1,0 +1,22 @@
+uuid: 0c283c53-2096-4897-bd90-eca338ec4ae9
+langcode: en
+status: true
+dependencies:
+  module:
+    - d8_card_17
+  theme:
+    - bartik
+id: forcastblock
+theme: bartik
+region: sidebar_first
+weight: 0
+provider: null
+plugin: forcast_block
+settings:
+  id: forcast_block
+  label: 'Forcast block'
+  provider: d8_card_17
+  label_display: visible
+  latitude: '18.520430'
+  longitude: '73.856743'
+visibility: {  }

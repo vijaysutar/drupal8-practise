@@ -1,0 +1,24 @@
+uuid: 804ea66a-4b62-40d0-94d9-77cee2b853d9
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.game.field_datetime
+    - field.field.node.game.field_place
+    - node.type.game
+  module:
+    - user
+id: node.game.teaser
+targetEntityType: node
+bundle: game
+mode: teaser
+content:
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_datetime: true
+  field_place: true

@@ -1,0 +1,23 @@
+uuid: 1db161cf-46b7-4249-8144-6d763bb1f6c0
+langcode: en
+status: true
+dependencies:
+  config:
+    - block_content.type.stock_exchange_rate_card
+    - field.storage.block_content.field_last_price
+id: block_content.stock_exchange_rate_card.field_last_price
+field_name: field_last_price
+entity_type: block_content
+bundle: stock_exchange_rate_card
+label: 'Last Price'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: float

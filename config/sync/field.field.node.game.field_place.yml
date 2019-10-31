@@ -1,0 +1,19 @@
+uuid: 23422f22-44de-428d-9c61-f494a59e3857
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_place
+    - node.type.game
+id: node.game.field_place
+field_name: field_place
+entity_type: node
+bundle: game
+label: Place
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

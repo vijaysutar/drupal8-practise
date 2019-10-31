@@ -1,0 +1,21 @@
+id: movies
+label: Movies
+migration_group: demo
+source:
+  plugin: movies
+  key: default
+destination:
+  plugin: 'entity:node'
+  default_bundle: movie
+process:
+  title: name
+  body: description
+  field_genre:
+    plugin: migration
+    migration: genres
+    source: genres
+  migration_dependencies:
+    required:
+      - genres
+_core:
+  default_config_hash: FCPfm_FJACGl7s3AWcmzSS6Hqj7EZl_yffa-wF-Zs_U

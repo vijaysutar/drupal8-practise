@@ -1,0 +1,22 @@
+uuid: 8384ff9a-5ec1-4c38-8dab-7bf9fd9630d5
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - substable
+_core:
+  default_config_hash: KHQIJ7Vfl25lTjzIc7qIvnuistt-Mw2O0kG4jCofmkI
+id: substable_messages
+theme: substable
+region: content
+weight: 0
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  provider: system
+  label_display: '0'
+visibility: {  }

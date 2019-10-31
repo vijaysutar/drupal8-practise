@@ -1,0 +1,20 @@
+uuid: b966012d-fca4-40ef-ab9a-d7f5b22b11d8
+langcode: en
+status: true
+dependencies:
+  module:
+    - d8_card_11
+id: contact_entity.field_isbn
+field_name: field_isbn
+entity_type: contact_entity
+type: decimal
+settings:
+  precision: 10
+  scale: 2
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,45 @@
+uuid: 394dfced-2cb1-475b-a145-3d21ea06aba0
+langcode: en
+status: true
+dependencies:
+  config:
+    - d8_card_11.contact_entity_type.contact_email
+    - field.field.contact_entity.contact_email.field_isbn
+id: contact_entity.contact_email.default
+targetEntityType: contact_entity
+bundle: contact_email
+mode: default
+content:
+  email:
+    type: string_textfield
+    weight: -4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_isbn:
+    weight: 26
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
+  name:
+    type: string_textfield
+    weight: -4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  user_id:
+    type: entity_reference_autocomplete
+    weight: 5
+    settings:
+      match_operator: CONTAINS
+      size: 60
+      placeholder: ''
+    region: content
+    third_party_settings: {  }
+hidden: {  }

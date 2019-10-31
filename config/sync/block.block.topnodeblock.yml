@@ -1,0 +1,20 @@
+uuid: cac749ef-906f-420c-8234-6658899b80ae
+langcode: en
+status: true
+dependencies:
+  module:
+    - d8_card_20
+  theme:
+    - bartik
+id: topnodeblock
+theme: bartik
+region: sidebar_second
+weight: 0
+provider: null
+plugin: top_node_block
+settings:
+  id: top_node_block
+  label: 'Top node block'
+  provider: d8_card_20
+  label_display: visible
+visibility: {  }

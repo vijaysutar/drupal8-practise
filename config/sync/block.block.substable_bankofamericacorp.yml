@@ -1,0 +1,25 @@
+uuid: ed802109-20f1-4561-99cb-b74a99037b2a
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:stock_exchange_rate_card:9e0d6ed0-87f3-49a8-91e2-7bb3a10bfd3b'
+  module:
+    - block_content
+  theme:
+    - substable
+id: substable_bankofamericacorp
+theme: substable
+region: sidebar_first
+weight: 0
+provider: null
+plugin: 'block_content:9e0d6ed0-87f3-49a8-91e2-7bb3a10bfd3b'
+settings:
+  id: 'block_content:9e0d6ed0-87f3-49a8-91e2-7bb3a10bfd3b'
+  label: 'Bank of America Corp'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }
