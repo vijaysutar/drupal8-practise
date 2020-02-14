@@ -1,0 +1,13 @@
+{
+    "name": "org_user_import",
+    "type": "drupal-module",
+    "description": "Organisation User Import",
+    "keywords": [
+    ],
+    "homepage": "https://www.drupal.org/project/org_user_import",
+    "minimum-stability": "dev",
+    "support": {
+        "issues": "https://www.drupal.org/project/issues/org_user_import",
+        "source": "http://cgit.drupalcode.org/org_user_import",
+    },
+}

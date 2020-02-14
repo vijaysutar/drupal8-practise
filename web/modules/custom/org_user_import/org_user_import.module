@@ -1,0 +1,35 @@
+<?php
+
+/**
+ * @file
+ * Contains org_user_import.module.
+ */
+
+use Drupal\Core\Routing\RouteMatchInterface;
+
+/**
+ * Implements hook_help().
+ */
+function org_user_import_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    // Main module help for the org_user_import module.
+    case 'help.page.org_user_import':
+      $output = '';
+      $output .= '<h3>' . t('About') . '</h3>';
+      $output .= '<p>' . t('Organisation User Import') . '</p>';
+      return $output;
+
+    default:
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+function org_user_import_theme() {
+  return [
+    'org_user_import' => [
+      'render element' => 'children',
+    ],
+  ];
+}

@@ -8,8 +8,11 @@ module:
   color: 0
   comment: 0
   config: 0
+  config_filter: 0
+  config_split: 0
   contact: 0
   contextual: 0
+  csv_importer: 0
   custom_shorturl: 0
   d8_card_11: 0
   d8_card_15: 0
@@ -39,6 +42,7 @@ module:
   menu_ui: 0
   migrate: 0
   migrate_plus: 0
+  migrate_source_csv: 0
   migrate_tools: 0
   migration_example: 0
   node: 0

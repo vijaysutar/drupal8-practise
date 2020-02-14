@@ -1,0 +1,5 @@
+name: 'Org user import'
+type: module
+description: 'Organisation User Import'
+core: 8.x
+package: 'Custom'

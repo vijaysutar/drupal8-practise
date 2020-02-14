@@ -1,0 +1,25 @@
+uuid: a347fd80-ce3b-40af-b75b-060753d5b6f3
+langcode: en
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:a4721175-6c68-4984-8b2d-5141d3436895'
+  module:
+    - block_content
+  theme:
+    - bartik
+id: newstaticblock
+theme: bartik
+region: header
+weight: 0
+provider: null
+plugin: 'block_content:a4721175-6c68-4984-8b2d-5141d3436895'
+settings:
+  id: 'block_content:a4721175-6c68-4984-8b2d-5141d3436895'
+  label: 'New static block'
+  provider: block_content
+  label_display: visible
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

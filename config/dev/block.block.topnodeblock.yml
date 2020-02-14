@@ -2,8 +2,6 @@ uuid: cac749ef-906f-420c-8234-6658899b80ae
 langcode: en
 status: true
 dependencies:
-  module:
-    - d8_card_20
   theme:
     - bartik
 id: topnodeblock

@@ -1,0 +1,5 @@
+entity.org_user_entity.add_form:
+  route_name: entity.org_user_entity.add_form
+  title: 'Add Org user entity'
+  appears_on:
+    - entity.org_user_entity.collection
